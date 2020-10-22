@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Prototype HTML Demo</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="This is a short keyword rich narrative of the site's purpose" />
+  <meta name="author" content="Thomas Wallace" />
+  <meta name="keywords" content="HTML5, UA Little Rock, UALR, IT Minor" />
+</head>
+
+<body>
+  <header class="primary">
+  <h1>Prototype HTML Document Example</h1>
+  <!--(Document Title)-->
+  </header>
+<section id-"content">
+  <h2>Properly Marking up an HTML Document</h2>
+  <!--(Primary Content Heading)-->
+
+  <table border="1"> <!-- "border" design time attribute-->
+    <caption>Grocery Items</caption>
+    <tr><th scope="col">Items</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr>
+    <tr><td>Ramen</td><td>12</td><td>.29</td></tr>
+    <tr><td>Bread</td><td>2</td><td>2.29</td></tr>
+    <tr><td>Soda</td><td>5</td><td>1.29</td></tr>
+  </table>
+  
+  <form action="processor.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fullname">Full Name:</label> <!--label-->
+      <input id="fullname" name="fullname" type="text"/> <!--input-->
+      <label for="address">Home Address:</label> <!--label-->
+      <textarea id="address" name="address"></textarea> <!--text area-->
+      <label for="favcol">Favorite Color:</label> <!--label-->
+      <select id="favcol" name="favcol"> <!--drop down box-->
+        <option value="R">Red</option>
+        <option value="G">Green</option>
+        <option value="B">Blue</option>
+        <option value="null" selected>...</option>
+      </select>
+ <input value="Take me to your leader" type="submit"/>
+    </fieldset>
+  </form>
+  
+  <p id="test">This is a paragraph. Often times designers will use <q>Dummy Text</q> as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, <em>consectetuer adipiscing elit.</em> Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. <strong>Donec fringilla risus nec nunc.</strong></p>
+  <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt= "UALR Logo" />
+  <p><img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt= "UALR Logo" />Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
+
+  <h3>This is a Subsection of the Primary Content</h3>
+  <!--(Subsection I)-->
+
+  <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p>
+
+  <p> Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
+
+  <!--This is a list of instructions.-->
+
+  <ol start>
+    <li>Instruction</li>
+    <li>Instruction
+      <ol>
+        <li>Ramen</li>
+        <li>Cheetos
+          <ul>
+            <li>Ramen</li>
+            <li>Cheetos</li>
+            <li>Jolt</li>
+            <li>Bread</li>
+          </ul>
+        </li>
+        <li>Jolt</li>
+        <li>Bread</li>
+      </ol>
+    </li>
+    <li>Instruction</li>
+  </ol>
+  <!--This is a list of items to purchase at the grocery store.-->
+  <ul>
+    <li>Ramen</li>
+    <li>Cheetos</li>
+    <li>Jolt</li>
+    <li>Bread</li>
+  </ul>
+
+  <!--This is an Example of how we should mark up a term and its description(s)-->
+<dl>
+  <dt>Term</dt>
+  <dd>Description 1</dd>
+  <dd>Description 2</dd>
+  <dt>Term</dt>
+  <dd>Description 1</dd>
+  <dd>Description 2</dd>
+  <dd>Description 3</dd>
+  </dl>
+  
+  
+  <h4>This is a Subsection of Subsection I</h4>
+
+  <blockquote>This is a Quote. Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</site></blockquote>
+
+  <h3>This is a Subsection of the Primary Content (Subsection II)</h3>
+
+  <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem.</p> <p>Quisque feugiat arcu eget sapien. Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p> <p>Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. Proin adipiscing ultrices dui. Duis porttitor, libero ut eleifend pellentesque, risus turpis fermentum est, vel nonummy lorem est id nisl. Nulla facilisi. In sagittis tortor. Vestibulum dictum leo vitae augue. Morbi in odio sed nulla luctus sodales.</p>
+  </section>
+  <section id="posts">
+    <article class=post>
+      <header><h2></h2></header>
+      <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p> <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p>
+      <footer><time datetime="2020-10-8">Published on Octover 8, 2020</time></footer>
+    </article>
+    <article class=post>
+      <header><h2></h2></header>
+      <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p> 
+      <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p>
+      <footer><time datetime="2020-10-8">Published on Octover 8, 2020</time></footer>
+    </article>
+    <article class=post>
+      <header><h2></h2></header>
+      <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p> <p>Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante.</p>
+      <footer><time datetime="2020-10-8">Published on Octover 8, 2020</time></footer>
+    </article>
+  </section>
+  <!--This is the Navigation for the Page-->
+<nav> 
+<ul>
+  <li><a href="index.html" title="Take me home country roads" downnload>Home</a></li> <!--relative-->
+  <li><a href="https://ualr.edu#news" target="_blank">UA Little Rock</a></li><!--aboslute-->
+  <li><a href="#test">Back to Top</a></li><!--Anchor link-->
+  <li><a href="mailto:tswallace@ualr.edu">Contact</a></li><!--mailto-->
+  </ul>
+  </nav>  
+  <footer class="primary"><h6>&copy; 2020 Taylor LoBue</h6></footer>
+</body>
+
+</html>
