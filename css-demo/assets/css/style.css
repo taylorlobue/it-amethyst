@@ -1,0 +1,43 @@
+/*------------color theme swatches in hex
+
+primary - color:#F5F5F2
+accent - color:#F27407
+heading - color:#F05B05
+hyperlink - color:#248F09
+hover - color:#F29D05
+
+*/
+
+body{
+    background-color:#F5F5F2;
+}
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* --------------Global Styles-------------*/
+
+body{
+    font-family: 'Fredoka One', cursive;
+    line-height: 1.5;
+    margin:0;
+}
+header.primary{
+    background-color:#F27407;
+    text-align:center;
+    color:#ffffff;
+    text-shadow: 2px 2px #000000;
+}
+p{
+    color:#F05B05;
+}
+h1, h2, h3{
+    color:#248F09
+}
