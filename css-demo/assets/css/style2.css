@@ -53,6 +53,9 @@ body{
 
 header.primary{
   background-color:#3b638b;
+  
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.2'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
   text-align:center;
   color:#ffffff;
   text-shadow: 2px 2px #000000;
@@ -266,4 +269,75 @@ td{
 }
 tr:hover{
   background:lightblue;
+}
+
+td:nth-of-type(n+2) {
+  text-align:right;
+}
+
+#additional-elements ol{
+  list-style-type: upper-roman;  
+}
+
+#additional-elements ul ul{
+  list-style-type: square;
+  color:red;
+}
+/*
+#additional-elements ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+
+ul li:before {
+	content: ">>";
+	position: absolute;
+	left: 0;
+}
+*/
+
+#additional-elements dl{
+  font-weight:bold;
+  color:darkorange;
+}
+
+#additional-elements dt{
+  color:darkblue;  
+}
+
+#additional-elements dd{
+  
+}
+
+dd + dt{
+  margin-top:1.4em;
+}
+
+#additional-elements dt:first-child{
+  font-weight:bold;
+  color:darkblue;
+  margin-top:0
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator */
+
+h2 + p{
+  color:blue;
+}
+
+#additional-elements blockquote{
+  background:lightgreen;
+  padding:40px 60px;
+  border:5px double grey;
+  border-radius:16px;
+  font-size:1.2em;
+}
+
+#additional-elements cite{
+  display:block;
+  text-align:right;
+  font-size:.6em;
+  margin-top:1.5rem;
 }
