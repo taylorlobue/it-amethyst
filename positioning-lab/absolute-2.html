@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Positioning Lab</title>
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #ECECEC;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #FFF;
+	text-align: center;
+	line-height: 24px;
+}
+
+#wrapper {
+	background-color: #FFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	width: 800px;
+	height: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	position: relative;
+}
+
+.box{
+	width:150px;
+	height:150px;
+}
+
+#red {
+	background-color: #900;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+#green {
+	background-color: #090;
+	position: absolute;
+	top:0px;
+	right:0px;
+}
+#blue {
+	background-color: #00F;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	
+}
+#purple {
+	background-color: #63C;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+#footer {
+	background-color: #666;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+  }
+h1 {
+	color: #000;
+	font-weight: normal;
+	padding: 50px;
+}
+</style>
+</head>
+
+<body>
+<h1>Absolute Positioning 2</h1>
+
+<div id="wrapper">
+	<div id="footer">Footer</div>
+	<div id="red" class="box">Red</div>
+	<div id="green" class="box">Green</div>
+	<div id="blue" class="box">Blue</div>
+	<div id="purple" class="box">Purple</div>
+</div>
+</body>
+</html>
