@@ -1,0 +1,29 @@
+Form Action - https://brucebauer.info/assets/ITEC3650/datadump.php
+First Name - name=FirstName, size=30, maxlength=30
+Middle Initial - name=MiddleInitial, size=1, maxlength=1
+Last Name - name=LastName, size=30, maxlength=30
+Email - name=Email, size=30, maxlength=30
+Sex - name=Sex
+Male returns "M"
+Female returns "F"
+N/A returns "N"
+Birthday - name=Birthday, size=8, maxlength=8
+Height - name=Height, size=3, maxlength=3
+Weight - name=Weight, size=3, maxlength=3
+Phone Number - name=PhoneNumber, size=14, maxlength=14
+Marital Status - name=MaritalStatus
+Single returns "S"
+Married returns "M"
+Divorced returns "D"
+Legally Separated returns "L"
+Widowed returns "W"
+Address - name=Address, size=30, maxlength=30
+City - name=City, size=30, maxlength=30
+State - name=State, size=3, Displays long state name, returns 2 character state code. (Hint: search "html state dropdown" to eliminate some typing)
+
+Zip - name=Zip, size=5, maxlength=5
+
+Taking Medications - name=Medications
+Yes returns "Y"
+No returns "N"
+Medications - name=MedicationsList, rows=3, cols=30
