@@ -1,0 +1,16 @@
+First Name - required
+Middle Initial - none
+Last Name - required
+Email - required, email
+Sex - required
+Birthday - required, date
+Height - required, number, minimum 12, maximum 120
+Weight - required, number, minimum 10, maximum 500
+Phone Number - required, US Phone
+Marital Status - required
+Address - required
+City - required
+State - required
+Zip - required, 5 digits
+Taking Medications - required*
+Medications - none
