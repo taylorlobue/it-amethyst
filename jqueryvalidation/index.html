@@ -126,7 +126,7 @@
       
       <label class="formlabel" for="Medications">Taking Medications</label>
       <label for="Yes">Yes</label>
-      <input type="radio" id="Yes" name="Medications" value="Y">
+      <input type="radio" id="Yes" name="Medications" value="Y" data-rule-required="true">
       <label for="No">No</label>
       <input type="radio" id="No" name="Medications" value="N"><br>
       
@@ -136,7 +136,9 @@
     
     </form>
     <script>
-      $("#patientform").validate();
+      $("#patientform").validate({
+
+});
     </script>
 </body>
 </html>
