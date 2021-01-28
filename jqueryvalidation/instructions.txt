@@ -14,3 +14,17 @@ State - required
 Zip - required, 5 digits
 Taking Medications - required*
 Medications - none
+
+data-msg-required="First Name is Required"
+data-msg-minlength="Password must be at least 10 characters"
+data-msg-maxlength="Address must be less than 20 characters"
+data-msg-min="Age must be 18 years or greater"
+data-msg-max="You can purchase only 5 items"
+data-msg-email="Invalid Email"
+data-msg-url="Invalid URL - example: http://google.com"
+data-msg-date="Date must be MM/DD/YYYY format"
+data-msg-dateISO="Date must be YYYY-MM-DD format"
+data-msg-number="You must enter a decimal number"
+data-msg-digits="Must be an integer"
+data-msg-creditcard="Invalid Credit Card"
+data-msg-phoneUS="Invalid Phone Number"
