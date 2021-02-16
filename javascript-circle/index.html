@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Circle Calculations</title>
+    <meta charset ="utf-8"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+
+<!-- The following should be a file in the "style" folder -->
+    <style>
+    .formlabel {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .error {
+        color: red;
+        padding-left: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <form id="CircleForm" onsubmit="return false">
+        <h2>Circle Calculations</h2>
+        <label for="radius" class="formlabel">Enter radius of a circle:</label>
+        <input type="text" id="radius" name="radius"
+               data-rule-required="true"  data-msg-required="Radius is Required" 
+               data-rule-number="true" data-msg-number="Radius must be floating point number"
+               data-rule-min="0" data-msg-min="Radius must be greater than zero">
+        <label for="radius" class="error" id="radiuserror"></label>
+        <br>
+        
+        <label for="diameter" class="formlabel">Diameter:</label><span id="diameter"></span><br>
+        <label for="circumference" class="formlabel">Circumference:</label><span id="circumference"></span><br>
+        <label for="area" class="formlabel">Area:</label><span id="area"></span><br>
+        <br><br>
+        <input type="submit" value="Calculate" id="btnSubmit" onclick="DisplayCircle()">
+        <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
+
+
+<script>
+$( "#CircleForm" ).validate({
+
+});
+
+function DisplayCircle() {
+
+    if ($("#CircleForm").valid()) {
+                // if the form is valid, then make the calculations
+                 document.getElementById("diameter").innerHTML = "";
+                 document.getElementById("circumference").innerHTML = "";
+                 document.getElementById("area").innerHTML = "";
+
+                 var radius; // string representation of radius
+                 var radiusfp; // floating point value of raidus
+                 var diameter; // floating point value of diameter
+                 var circumference; // floating point value of circumference
+                 var area; // floating point value of area
+
+                 // read in the radius as a string
+                 radius = document.getElementById("radius").value;
+
+                 // Convert number from string to Floating Point
+                 radiusfp = parseFloat( radius ); 
+
+                 // calculate diameter
+                 
+                 diameter = calcDiameter(radiusfp);
+ 
+                 // calculate the area
+                 area = calcArea(radiusfp);
+                 
+                 // calculate the circumference
+                 circumference = calcCircumference(radiusfp);
+
+                 // display the diameter
+                 document.getElementById("diameter").innerHTML = diameter.toString();
+                 
+                 // display the circumference
+                 document.getElementById("circumference").innerHTML = circumference.toString();
+                 
+                 // display the area
+                 document.getElementById("area").innerHTML = area.toString();
+            }
+
+}
+
+          function calcDiameter (r)
+          {
+                             // calculate the diameter
+                 return r * 2;
+          }
+          
+          function calcArea (r)
+          {
+                             // calculate the area
+                 return Math.PI * ( r * r );
+          }
+
+        function calcCircumference (r)
+          {
+                             // calculate the circumference
+                 return  Math.PI * ( r * 2 );
+          }
+
+
+          function clearForm()
+        {
+            document.getElementById("radius").value = "";
+            document.getElementById("radiuserror").innerHTML = "";
+            document.getElementById("diameter").innerHTML = "";
+            document.getElementById("circumference").innerHTML = "";
+            document.getElementById("area").innerHTML = "";
+        }             
+        
+        // this is a copy from the triangle form for comparison
+        function clearForm2()
+        {
+            document.getElementById("leg1").value = "";
+            document.getElementById("leg1error").innerHTML = "";
+            document.getElementById("leg2").value = "";
+            document.getElementById("leg2error").innerHTML = "";
+            document.getElementById("hypotenuse").innerHTML = "";
+        }
+        
+</script>
+</form>
+</body>
+</html>
