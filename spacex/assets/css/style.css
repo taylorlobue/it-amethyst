@@ -9,31 +9,47 @@ html {
 }
 
 
-h3 {
-  color:blue;
-}
-
-h2 {
-  color:orange;
-}
-
-h5 {
-  color:red;
-}
-
-h4 {
-  color:green;
-}
 */
 
 header.primary {
    background:url("../img/Dragon_2_hover_test.jpg");
-   background-position:left top;
+   background-position:center top;
    background-attachment: fixed;
    background-size:cover;
    height:100vh;
-   
+   text-align:center;
 }
+
+header.secondary {
+   background:url("../img/Dragon_2_hover_test.jpg");
+   background-position:center top;
+   background-attachment: fixed;
+   background-size:cover;
+   height:40vh;
+   text-align:center;
+  
+}
+
+#title {
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    clear:both;
+    
+  }
+
+ /*
+ background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  
+  background-color
+background-image
+background-repeat
+background-attachment
+background-position
+  */
 
 ul {
   display:flex;
@@ -81,8 +97,8 @@ li a{
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   text-decoration:none;
   text-align:center;
-  background-color: rgba(125, 0, 125, 0.3);
-  border-radius: 25px;
+ 
+ 
   
 }
 #nav{
@@ -90,7 +106,7 @@ li a{
   text-decoration: none;
   display:flex;
   flex-direction:column;
-  align-items:left;
+ 
 }
 
  #content{
@@ -109,7 +125,7 @@ li a{
    padding:5%;
  }
  
-#overview p {
+p {
   color:white;
   width:80%;
   margin:auto;
@@ -132,13 +148,7 @@ li a{
  
  }
  
-#title {
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    clear:both;
-    
-  }
+
  
 h1 a{
     font: 130px/85px Arial;
@@ -152,15 +162,7 @@ h1 a{
     letter-spacing:10px;
 }
 
-header.primary{
- 
- /* background-image: url("../img/space.jpg");*/
-  
-  text-align:center;
-  
-  
-  
-}
+
  /*
  background-image: url("img_tree.png");
   background-repeat: no-repeat;
@@ -242,21 +244,12 @@ background-position
 
 
 
-
-
-
-
-
-h3, h2 {
-  text-align:center
-  
-}
-
 h2 {
   color:white;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
   font-size:1.7em;
   letter-spacing:2px;
+
 }
 
 h3 {
@@ -266,6 +259,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing:10px;
   background:purple;
+  text-align:center;
 }
 
 h4 {
@@ -288,3 +282,11 @@ h5 {
   border-radius: 25px;
 }
 
+h6 {
+    font-size:1em;
+    text-align:center;
+}
+
+footer nav ul {
+    justify-content:center;
+}
