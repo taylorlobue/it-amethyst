@@ -113,7 +113,7 @@ li a{
    
  }
  
- #overview{
+ #overview, #history, #faq{
    background-image: url("../img/space.jpg");
    background-size:cover;
    background-attachment: fixed;
@@ -123,7 +123,45 @@ li a{
    letter-spacing:2px;
    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
    padding:5%;
+   text-align:center;
  }
+ 
+ #history td, thead {
+     text-align:left;
+     color:white;
+     font: Arial,Verdana,sans-serif;
+ }
+ 
+ table{
+  width:100%;
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+ 
+ tr:nth-child(even){
+  background:#dcdcdc;
+}
+
+th{
+  background:#3b638b;
+  color:#fff;
+  text-shadow:2px 2px #000;
+ 
+  padding:5px;
+}
+
+td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin-bottom:20px;
+}
+tr:hover{
+  background:lightblue;
+}
+
+td:nth-of-type(n+2) {
+  text-align:right;
+}
  
 p {
   color:white;

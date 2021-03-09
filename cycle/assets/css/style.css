@@ -18,14 +18,18 @@ body {
 	margin-left: auto;
 	border: 1px solid #999;
 	height: 670px;
-	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+	overflow: hidden; 
 	border-radius: 6px;
 }
 .gallery img {
 	margin: 15px;
 }
 
+
+
 /*
+
+
 #nav a {
 
 	display:inline-block;
