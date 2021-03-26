@@ -11,26 +11,63 @@ html {
 
 */
 
-header.primary {
-   background:url("../img/dragon_2_hover_test.jpg");
+.headerdiv {
+   background:url("../img/dragon-in-space.jpg");
    background-position:center top;
    background-attachment: fixed;
    background-size:cover;
    height:100vh;
    text-align:center;
+   
 }
 
-header.secondary {
-   background:url("../img/dragon_2_hover_test.jpg");
+.headerdiv2 {
+   background:url("../img/dragon-in-space.jpg");
    background-position:center top;
    background-attachment: fixed;
    background-size:cover;
+   height:40vh;
+   text-align:center;
+   
+}
+
+header.primary {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0..25);
+  
+}
+
+header.secondary {
+   content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0..25);
    height:40vh;
    text-align:center;
   
 }
 
 #title {
+    position:relative;
+    top: 25vh;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    clear:both;
+    
+  }
+  
+  #title2 {
+    position:relative;
+    top: 0vh;
     display:flex;
     justify-content:flex-start;
     flex-direction:column;
@@ -75,12 +112,10 @@ li:hover, li:active{
   width: 10%;
   clear:both;
   
-  
- 
-  
 }
+
 li {
-    background-color: rgba(125, 0, 125, 0.5);
+    background-color: rgba(0, 0, 255, .6);
     border-radius: 25px;
     letter-spacing:2px;
     margin:10px;
@@ -91,7 +126,7 @@ li {
 li a{
   
   font-size:1.5vw;
-  border-color:white;
+  
   margin:10px;
   color: black;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
@@ -104,9 +139,9 @@ li a{
 #nav{
   text-transform: uppercase;
   text-decoration: none;
-  display:flex;
+  display: flex;
   flex-direction:column;
- 
+  
 }
 
  #content{
@@ -215,6 +250,17 @@ background-position
   */
  
  
+ .fadediv {
+    content: "";
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    
+ }
+ 
  #cargo {
    background-image: url("../img/dragon-intertior-cargo.jpg");
    background-position:center;
@@ -271,11 +317,11 @@ background-position
   font-size:2.3em;
   /*text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;*/
    /* text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
-
+  text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
   letter-spacing:3px;
   width:80%;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 25px;
+  
+ 
   text-align:center;
   
  }
@@ -295,13 +341,14 @@ h3 {
   text-align:center;
   font: 40px D-DIN-Bold,Arial,Verdana,sans-serif;
   text-transform: uppercase;
-  letter-spacing:10px;
-  background:purple;
+  letter-spacing:5px;
+  background: rgba(0,0,255,.5);
   text-align:center;
+  border-radius:20px;
 }
 
 h4 {
-  color:purple;
+  color:blue;
   text-align:center;
   font: 40px D-DIN-Bold,Arial,Verdana,sans-serif;
   text-transform: uppercase;
@@ -316,8 +363,8 @@ h5 {
   font-size:3em;
   text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
   line-height:1;
-  background-color: rgba(125, 0, 125, 0.6);
-  border-radius: 25px;
+  
+  
 }
 
 h6 {
@@ -327,4 +374,15 @@ h6 {
 
 footer nav ul {
     justify-content:center;
+    
+}
+footer nav ul li {
+    background: rgba(0,0,255,.7);
+}
+
+
+#form {
+    width:50vw;
+    margin:auto;
+    min-width:500px;
 }

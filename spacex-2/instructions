@@ -1,0 +1,39 @@
+Client: SpaceX
+Task: To build a three page promotional web site for the SpaceX Dragon Vehicle.
+Required Files
+Content
+Images You are welcome to mine the internet for additional relevant imagery.
+Site Goals
+Target Audience: This campaign should target space and Science enthusiasts.
+Look and Feel:  The client has requested the look and feel of the micro-site be geared toward communicating the futuristic nature of the company and their attention to customer satisfaction. There is no preferred color scheme, but the client has asked for a consistent design for the three pages using the same color scheme and fonts throughout.  The client has requested the included logo be used on all of the pages in the site.
+
+Site Specifics:
+Title: SpaceX Dragon
+Tag Line: First Private Spacecraft to the Space Station
+Three Pages
+Home Page – Provides Product Overview
+History
+Frequently Asked Questions
+Content for these three pages is located in this gist.
+
+SpaceX has provided you with a list of technical requirements for their site. In order for project sign-off to occur the following elements must be present. (Mastery)
+
+Properly Marked-up HTML (Must Validate)
+Use CSS for Layouts (Must Validate / No inline styles)
+Proper Titles for all pages
+Create at least three pages that are linked to one another with a consistent navigation element
+All images in the site must be optimized for the web and have proper ALT text
+No dead or broken links
+Proper Directory Structure / File Management / Naming Conventions
+At least one link to the Internet (External Web site)
+At least one Email Link
+Use of Keywords and Description Meta Tags (Head Content)
+Consistent footer with a contact link
+Consistent Graphic Design
+Add <meta name="robots" content="noindex"> to the head of your document to avoid search engines from indexing this page.
+There is a design bonus for completion of the project with all of the above-listed components
+
+Site Hosting
+Please develop this project in your AWS Workspace. The completed projects should be stored in a dedicated directory named dragon and linked from the course homepage.
+
+Projects will not be accepted unless these criteria have been met. Once complete please publish your project to GitHub.
