@@ -139,9 +139,11 @@ li a{
 #nav{
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  flex-direction:column;
-  
+  position: fixed;
+  top:-20px;
+  float:left;
+  z-index: 1;
+
 }
 
  #content{
