@@ -4,7 +4,7 @@ function GetCurrencyValue() {
     // Get a reference to the form - Use the ID of the form
     var form = $("#myform");
     
-    // Validate all of the for elements
+    // Validate all of the form elements
     form.validate();
     
     // If all of the form elements are valid, the get the form values

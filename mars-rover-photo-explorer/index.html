@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mars Rover Photo Explorer">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Taylor LoBue">
+    <title>Mars Rover Photo Explorer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    
+</head>
+<body>
+    
+    <div class="formcontainer" onsubmit="return false">
+        <h1>Mars Rover Photo Explorer</h1>
+        <table>
+            <tr>
+                    
+                <th scope="col">Rover</th>
+                <th scope="col">Mission Start</th>
+                <th scope="col">Mission End</th>
+                
+            <tr>
+            <tr>
+                <td>Curiosity</td>
+                <td>08/06/2012</td>
+                <td>09/28/2019</td>
+            </tr>
+            <tr>
+                <td>Opportunity</td>
+                <td>01/26/2004</td>
+                <td>06/11/2018</td>
+            </tr>
+            <tr>
+                <td>Spirit</td>
+                <td>01/05/2004</td>
+                <td>03/21/2004</td>
+            </tr>
+        </table>
+        <h2>Select a rover and a picture date:</h2>
+        
+        <br>
+        
+        <form id="myform">
+            <label class="formlabel">Rover: </label>
+           
+            <label for="Rover">
+            <input type="radio" name="Rover" id="curiosity" value="curiosity"
+                   data-rule-required="true" data-msg-required="Rover is Required" onclick="curiosityDate(); checkcount();"/>Curiosity
+            </label>
+            
+            <label for="opportunity">
+            <input type="radio" name="Rover" id="opportunity" value="opportunity" onclick="opportunityDate(); checkcount();">Opportunity
+            </label>
+            
+            <label for="spirit">
+            <input type="radio" name="Rover" id="spirit" value="spirit" onclick="spiritDate(); checkcount();">Spirit
+            </label>
+            
+            <label for="Rover" class="error" id="RoverErrorMsg"></label>
+            
+            <br><br>
+            
+            <label class="formlabel">Picture Date:</label>
+            <input type="date" name="Date" id="Date" data-date-format="YYYY-MM-DD" min="2004-01-05" max="2019-09-28" onchange="checkcount();" value=""
+                data-rule-required="true" data-msg-required="Date is Required">
+            <br><br>
+            <label class="formlabel">Pictures on this date: </label>
+            <label id="picturecount"></label>
+            
+            
+            <label class="error" id="DateErrorMsg"></label><br>
+            
+            <br><br>
+    
+            <input type="button" value="First 25 Photos" name="Search" onclick="first25();">
+            
+            <input type="button" value="View All Photos" name="ViewAllPhotos" onclick="viewallphotos();">
+            
+            <input type="button" value="Clear" name="Clear" onclick="clearform();">
+            
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            
+        </form>
+    </div>
+    
+    <div id="gallery">
+        
+        
+        
+        
+    </div>
+
+</form>
+<script src="assets/js/local-calls.js"></script>
+</body>
+</html>
+
