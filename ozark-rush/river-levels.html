@@ -1,0 +1,696 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ozark Rush Adventures</title>
+    <meta name="description" content="Ozark Rush Adventures">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/lse7yph.css">
+	
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="wrapper">
+	<header>
+        <nav>
+			<img alt="Ozark Rush Adventures" src="assets/img/asset4white.png">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="booking.html">Book</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="hero-image">
+            <div class="hero-text">
+                <img alt="Ozark Rush Adventures Full Logo" src="assets/img/asset5white.png">
+                <p>YOUR TICKET TO ADVENTURE?<br>WE HAVE IT RIGHT HERE.</p>
+                <button><a href="booking.html">Let's Go &#62;</a></button>
+            </div>
+        </div>
+    </header>
+	<main>
+		<div class="section-header">
+		<h2>BUFFALO RIVER LEVELS</h2>
+		</div>
+		
+		<div class="formcontainer">
+            
+            <section id="chartsection" > 
+                <div class="chart">
+                    <canvas class="charts" id="chartjs-0" width="400" height="400"></canvas>
+                    <p>NPS floating recommendations for Boxley:
+                    <br>Very Low: Less than 3.25 ft.
+                    <br>Moderate: 3.81-5.71 ft.
+                    <br>High 5.71-8.89 ft.
+                    <br>Flood stage: Greater than 8.89 ft
+                    <br><strong>The Boxley gage is best for float trips on the Hailstone and Boxley to Ponca.</strong>  
+                    </p>
+                </div>
+                <div class="chart">
+                    <canvas class="charts" id="chartjs-1" width="400" height="400"></canvas>
+                    <p>NPS floating recommendations for Ponca:
+                    <br>Very Low: Less than 2.4 ft.
+                    <br>Low: 2.40-2.82 ft.
+                    <br>Moderate: 2.82-3.65 ft.
+                    <br>High 3.65-6.00 ft.
+                    <br>Flood stage: Greater than 6 ft. gage height
+                    <br><strong>The Ponca gage is best for float trips in the upper Buffalo: Ponca to Kyles, Steel Creek, and Erbie.</strong>
+                    </p>
+                </div>
+                <div class="chart">
+                    <canvas class="charts" id="chartjs-2" width="400" height="400"></canvas>
+                    <p>NPS floating recommendations for Pruitt:
+                    <br>Very Low: Less than 4.24 ft.
+                    <br>Low: 4.24-4.69 ft.
+                    <br>Moderate: 4.69-6.59 ft.
+                    <br>High 6.59-8.28 ft.
+                    <br>Flood stage: Greater than 8.28 ft.
+                    <br><strong>The Pruitt gage is best for float trips in the middle Buffalo from Pruitt to the Hwy 65 bridge.</strong>
+                    </p>
+                </div>
+                <div class="chart">
+                    <canvas class="charts" id="chartjs-3" width="400" height="400"></canvas>
+                    <p><strong>NPS Recommendations for this gage were not available. The recommendations for the Pruitt gage cover this stretch of the river.</strong>
+                    </p>
+                </div>
+            </section>
+			<br>
+			<table id="levelguide" border="1" cellspacing="5" cellpadding="5">
+            <tbody>
+                <tr>
+                    <td><strong>River Level</strong></td>
+                    <td>Very Low</td>
+                    <td>Low</td>
+                    <td>Moderate</td>
+                    <td>High</td>
+                    <td>Flood stage</td>
+                    
+                </tr>
+                <tr>
+                    <td><strong>Recommendation</strong></td>
+                    <td>Not Floatable</td>
+                    <td>Low but Floatable</td>
+                    <td>Ample Water for Floating</td>
+                    <td>Experienced Floaters Only</td>
+                    <td>River Closed</td>
+                </tr>
+                
+            </tbody>
+            </table>
+			    <br><br>
+		    </div>
+                <div id="RiverMap">
+        	    <div class="section-header">
+    		    <h2>BUFFALO RIVER MAP</h2>
+    		    </div>
+    		    <br>
+    		    <p id="fullscreenmap"><a href="assets/img/buffalo-river-map.jpg">Click here for full screen view of map.</a></p>
+                <img src="assets/img/buffalo-river-map.jpg" alt="Buffalo River Map">
+                </div>
+                <br><br>
+			    <div id="RiverMileage">
+			    <div class="section-header">
+            		<h2>RIVER MILEAGE CHART</h2>
+            		</div>
+            		<br>
+                <p>Average river flow is 2 miles per hour. Take the mileage between two points and divide by two. This should tell you approximately how many hours it will take you to float any given section of river. Paddle and float times vary depending on breaks, if you are paddling or not, and the river level.</p>
+                <br>
+                <div class='table-wrapper'>
+                    <table id="rivertable" align="center" border="1" cellpadding="1" cellspacing="1">
+                    <tbody>
+                    <tr>
+                    <td><strong>Access Points</strong></td>
+                    <td>Ponca</td>
+                    <td>Steel Creek</td>
+                    <td>Kyles Landing</td>
+                    <td>Erbie</td>
+                    <td>Ozark</td>
+                    <td>Pruitt</td>
+                    <td>Hasty</td>
+                    <td>Carver</td>
+                    <td>Mt. Hersey</td>
+                    <td>Woolum</td>
+                    <td>Baker Ford</td>
+                    <td>Tyler Bend</td>
+                    <td>Grinders Ferry</td>
+                    <td>Gilbert</td>
+                    <td>North Maumee</td>
+                    <td>South Maumee</td>
+                    <td>Spring Creek</td>
+                    <td>Dillards Ferry</td>
+                    <td>*Buffalo Point</td>
+                    <td>Rush</td>
+                    <td>Buffalo City</td>
+                    </tr>
+                    <tr>
+                    <td>Boxley</td>
+                    <td>6.0</td>
+                    <td>8.7</td>
+                    <td>16.7</td>
+                    <td>22.3</td>
+                    <td>27.8</td>
+                    <td>29.9</td>
+                    <td>36.7</td>
+                    <td>40.9</td>
+                    <td>47.7</td>
+                    <td>56.3</td>
+                    <td>67.2</td>
+                    <td>71.5</td>
+                    <td>72.6</td>
+                    <td>76.9</td>
+                    <td>88.5</td>
+                    <td>89.0</td>
+                    <td>93.7</td>
+                    <td>98.3</td>
+                    <td>99.7</td>
+                    <td>107.2</td>
+                    <td>131.4</td>
+                    </tr>
+                    <tr>
+                    <td>Ponca</td>
+                    <td> </td>
+                    <td>2.7</td>
+                    <td>10.7</td>
+                    <td>16.3</td>
+                    <td>21.8</td>
+                    <td>23.9</td>
+                    <td>30.7</td>
+                    <td>34.9</td>
+                    <td>41.7</td>
+                    <td>50.3</td>
+                    <td>61.2</td>
+                    <td>65.5</td>
+                    <td>66.6</td>
+                    <td>70.9</td>
+                    <td>82.5</td>
+                    <td>83.0</td>
+                    <td>87.7</td>
+                    <td>92.3</td>
+                    <td>93.7</td>
+                    <td>101.2</td>
+                    <td>125.4</td>
+                    </tr>
+                    <tr>
+                    <td>Steel Creek</td>
+                    <td> </td>
+                    <td> </td>
+                    <td>8.0</td>
+                    <td>13.6</td>
+                    <td>19.1</td>
+                    <td>21.1</td>
+                    <td>28.0</td>
+                    <td>32.2</td>
+                    <td>39.0</td>
+                    <td>47.6</td>
+                    <td>58.5</td>
+                    <td>62.8</td>
+                    <td>63.9</td>
+                    <td>68.2</td>
+                    <td>79.8</td>
+                    <td>80.3</td>
+                    <td>85.0</td>
+                    <td>89.6</td>
+                    <td>91.0</td>
+                    <td>98.5</td>
+                    <td>122.7</td>
+                    </tr>
+                    <tr>
+                    <td>Kyles Landing</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>5.6</td>
+                    <td>11.1</td>
+                    <td>13.2</td>
+                    <td>20.0</td>
+                    <td>24.2</td>
+                    <td>31.0</td>
+                    <td>39.6</td>
+                    <td>50.5</td>
+                    <td>54.8</td>
+                    <td>55.9</td>
+                    <td>60.2</td>
+                    <td>71.8</td>
+                    <td>72.3</td>
+                    <td>77.0</td>
+                    <td>81.6</td>
+                    <td>83.0</td>
+                    <td>90.5</td>
+                    <td>114.7</td>
+                    </tr>
+                    <tr>
+                    <td>Erbie</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>5.5</td>
+                    <td>7.6</td>
+                    <td>14.4</td>
+                    <td>18.6</td>
+                    <td>25.4</td>
+                    <td>34.0</td>
+                    <td>44.9</td>
+                    <td>49.2</td>
+                    <td>50.3</td>
+                    <td>54.6</td>
+                    <td>66.2</td>
+                    <td>66.7</td>
+                    <td>71.4</td>
+                    <td>76.0</td>
+                    <td>77.4</td>
+                    <td>84.9</td>
+                    <td>109.1</td>
+                    </tr>
+                    <tr>
+                    <td>Ozark</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>2.1</td>
+                    <td>8.9</td>
+                    <td>13.1</td>
+                    <td>19.9</td>
+                    <td>28.5</td>
+                    <td>39.4</td>
+                    <td>43.7</td>
+                    <td>44.8</td>
+                    <td>49.1</td>
+                    <td>60.7</td>
+                    <td>61.2</td>
+                    <td>65.9</td>
+                    <td>70.5</td>
+                    <td>71.9</td>
+                    <td>79.4</td>
+                    <td>103.6</td>
+                    </tr>
+                    <tr>
+                    <td>Pruitt</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>6.8</td>
+                    <td>11.0</td>
+                    <td>17.8</td>
+                    <td>26.4</td>
+                    <td>37.3</td>
+                    <td>41.6</td>
+                    <td>42.7</td>
+                    <td>47.0</td>
+                    <td>58.6</td>
+                    <td>59.1</td>
+                    <td>63.8</td>
+                    <td>68.4</td>
+                    <td>69.8</td>
+                    <td>77.3</td>
+                    <td>101.5</td>
+                    </tr>
+                    <tr>
+                    <td>Hasty</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>4.2</td>
+                    <td>11.0</td>
+                    <td>19.6</td>
+                    <td>30.5</td>
+                    <td>34.8</td>
+                    <td>35.9</td>
+                    <td>40.2</td>
+                    <td>51.8</td>
+                    <td>52.3</td>
+                    <td>57.0</td>
+                    <td>61.6</td>
+                    <td>63.0</td>
+                    <td>70.5</td>
+                    <td>94.7</td>
+                    </tr>
+                    <tr>
+                    <td>Carver</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>6.8</td>
+                    <td>15.4</td>
+                    <td>26.3</td>
+                    <td>30.6</td>
+                    <td>31.7</td>
+                    <td>36.0</td>
+                    <td>47.6</td>
+                    <td>48.1</td>
+                    <td>52.8</td>
+                    <td>57.4</td>
+                    <td>58.8</td>
+                    <td>66.3</td>
+                    <td>90.5</td>
+                    </tr>
+                    <tr>
+                    <td>Mt. Hersey</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>8.6</td>
+                    <td>19.5</td>
+                    <td>23.8</td>
+                    <td>24.9</td>
+                    <td>29.2</td>
+                    <td>40.8</td>
+                    <td>41.3</td>
+                    <td>46.0</td>
+                    <td>50.6</td>
+                    <td>52.0</td>
+                    <td>59.5</td>
+                    <td>83.7</td>
+                    </tr>
+                    <tr>
+                    <td>Woolum</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>10.9</td>
+                    <td>15.2</td>
+                    <td>16.3</td>
+                    <td>20.6</td>
+                    <td>32.2</td>
+                    <td>32.7</td>
+                    <td>37.4</td>
+                    <td>42.0</td>
+                    <td>43.4</td>
+                    <td>50.9</td>
+                    <td>75.1</td>
+                    </tr>
+                    <tr>
+                    <td>Baker Ford</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>4.3</td>
+                    <td>5.4</td>
+                    <td>9.7</td>
+                    <td>21.3</td>
+                    <td>21.8</td>
+                    <td>26.5</td>
+                    <td>31.1</td>
+                    <td>32.5</td>
+                    <td>40.0</td>
+                    <td>64.2</td>
+                    </tr>
+                    <tr>
+                    <td>Tyler Bend</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>1.1</td>
+                    <td>5.4</td>
+                    <td>17.0</td>
+                    <td>17.5</td>
+                    <td>22.2</td>
+                    <td>26.8</td>
+                    <td>28.2</td>
+                    <td>35.7</td>
+                    <td>59.9</td>
+                    </tr>
+                    <tr>
+                    <td>Grinders Ferry</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>4.3</td>
+                    <td>15.9</td>
+                    <td>16.4</td>
+                    <td>21.1</td>
+                    <td>25.7</td>
+                    <td>27.1</td>
+                    <td>34.6</td>
+                    <td>58.8</td>
+                    </tr>
+                    <tr>
+                    <td>Gilbert</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>11.6</td>
+                    <td>12.1</td>
+                    <td>16.8</td>
+                    <td>21.4</td>
+                    <td>22.8</td>
+                    <td>30.3</td>
+                    <td>58.8</td>
+                    </tr>
+                    <tr>
+                    <td>North Maumee</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>.5</td>
+                    <td>5.2</td>
+                    <td>9.8</td>
+                    <td>11.2</td>
+                    <td>18.7</td>
+                    <td>42.9</td>
+                    </tr>
+                    <tr>
+                    <td>South Maumee</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>4.7</td>
+                    <td>9.3</td>
+                    <td>10.7</td>
+                    <td>18.2</td>
+                    <td>42.4</td>
+                    </tr>
+                    <tr>
+                    <td>Spring Creek</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>4.6</td>
+                    <td>6.0</td>
+                    <td>13.5</td>
+                    <td>37.7</td>
+                    </tr>
+                    <tr>
+                    <td>Dillards Ferry</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>1.4</td>
+                    <td>8.9</td>
+                    <td>33.1</td>
+                    </tr>
+                    <tr>
+                    <td>*Buffalo Point</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>7.5</td>
+                    <td>31.7</td>
+                    </tr>
+                    <tr>
+                    <td>Rush</td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>24.2</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <p><strong>* The road down to the launch at Buffalo Point is closed. If you put in or take out at Buffalo Point you will need to carry your boat and gear up the large and steep gravel bar to the parking lot. You may want to consider taking out at Dillards Ferry, which is 1.5 miles upstream from Buffalo Point.</strong></p>
+            
+		<div class="push"></div>
+	</main>
+	</div>
+	<footer class="footer">
+		<div>
+			<a href="https://www.google.com/maps/place/36%C2%B001'33.6%22N+93%C2%B021'54.6%22W/@36.0261133,-93.3654997,19.77z/data=!4m5!3m4!1s0x0:0x0!8m2!3d36.026009!4d-93.365169"> 
+				<p> 36°01'33.6"N 93°21'54.6"W </p>
+				<p>AR-43, Compton, AR 72624</p>
+			</a>
+		</div>
+		<img alt="Ozark Rush Adventures" src="assets/img/asset2white.png">
+		<br><p>&copy; 2021 Ozark Rush Adventures</p>
+	</footer>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="assets/js/local-calls.js"></script>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166250117-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166250117-2');
+</script>
+</body>
+
+</html>
